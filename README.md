@@ -2,7 +2,7 @@
 In online learning environments, student engagement significantly impacts academic success. However, educators struggle to identify students with low engagement (e.g., minimal participation in forums or resources) in real-time, hindering timely interventions. The challenge is to predict student engagement levels (low, medium, high) based on behavioral patterns, such as resource access and discussion posts, and to profile students for personalized support, ensuring improved learning outcomes in virtual education systems.
 
 # DATASET
-* Source: STUDENT_DATA.csv (similar to xAPI-Edu-Data, ~480 rows).
+* Source: STUDENT_DATA.csv (~480 rows).
 * Features:
     * Numerical: raisedhands, VisITedResources, AnnouncementsView, Discussion.
     * Categorical: StudentAbsenceDays, Relation, ParentAnsweringSurvey (one-hot encoded).
@@ -35,7 +35,8 @@ In online learning environments, student engagement significantly impacts academ
 * engagement_predictions.csv: Actual vs. predicted engagement for test set.
 * student_suggestions.csv: Suggestions for 5 students (e.g., "Encourage forum participation").
 * Console: Accuracy, confusion matrix, and cluster statistics.
-
+  
+<img width="838" alt="Image" src="https://github.com/user-attachments/assets/74d32003-218d-47ff-bc28-06e09cc49e90" />
 
 # RESULTS
 * DNN achieved ~80% accuracy , predicting engagement (low, medium, high) with deeper model (16+8 neurons, 20% dropout), 50 epochs, categorical features (StudentAbsenceDays, Relation). Confusion matrix showed fewer misclassifications . K-Means clustered students: active (high VisITedResources, ~80), moderate (~50), struggling (~20). Plotly dashboard visualized accuracy, clusters. student_suggestions.csv gave recommendations (e.g., “Encourage forum posts”).
@@ -48,5 +49,4 @@ System predicts engagement at ~80% accuracy, clusters students, and supports edu
 
 # ACKNOWLEDGEMENTS
 * Edunet Foundation for mentorship.
-* xAPI-Edu-Data dataset creators.
 * Open-source libraries: TensorFlow, Scikit-learn, Plotly.
