@@ -49,4 +49,4 @@ System predicts engagement at ~80% accuracy, clusters students, and supports edu
 
 # ACKNOWLEDGEMENTS
 * Edunet Foundation for mentorship.
-* Open-source libraries: TensorFlow, Scikit-learn, Plotly.
+* Open-source libraries: TensorFlow, Scikit-learn, Plotly..
